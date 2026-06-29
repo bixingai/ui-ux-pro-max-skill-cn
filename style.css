@@ -985,3 +985,72 @@ footer {
         padding: 4rem 4%;
     }
 }
+/* v2.0 Design System Generator */
+.design-system-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    align-items: stretch;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(236, 72, 153, 0.08));
+    border: 1px solid var(--glass-border);
+    border-radius: 28px;
+    box-shadow: var(--card-shadow);
+}
+
+.design-system-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.design-system-content p {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.check-list {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.check-list li {
+    color: var(--text-main);
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: 800;
+}
+
+.terminal-card {
+    display: flex;
+    align-items: center;
+    background: rgba(2, 6, 23, 0.82);
+    border: 1px solid rgba(34, 211, 238, 0.22);
+    border-radius: 22px;
+    padding: 1.5rem;
+    overflow: auto;
+}
+
+.terminal-card pre {
+    color: #a7f3d0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 900px) {
+    .design-system-card {
+        grid-template-columns: 1fr;
+        padding: 1.25rem;
+    }
+}
